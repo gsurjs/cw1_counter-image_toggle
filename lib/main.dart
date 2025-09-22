@@ -181,8 +181,8 @@ class _CounterImageScreenState extends State<CounterImageScreen>
                 height: 200,
                 child: Image.asset(
                   _showFirstImage 
-                    ? 'assets/images/image1.png'
-                    : 'assets/images/image2.png',
+                    ? 'assets/images/image1.jpg'
+                    : 'assets/images/image2.jpg',
                   fit: BoxFit.cover,
                 ),
               ),
