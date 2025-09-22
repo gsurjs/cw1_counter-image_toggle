@@ -149,7 +149,7 @@ class _CounterImageScreenState extends State<CounterImageScreen>
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('CW1 - Counter & Image Toggle'),
+        title: Text('Counter & Image Toggle'),
       ),
       body: Center(
         child: Column(
@@ -179,16 +179,11 @@ class _CounterImageScreenState extends State<CounterImageScreen>
               child: Container(
                 width: 200,
                 height: 200,
-                decoration: BoxDecoration(
-                  color: _showFirstImage ? Colors.blue : Colors.green,
-                  borderRadius: BorderRadius.circular(10),
-                ),
-                child: Center(
-                  child: Icon(
-                    _showFirstImage ? Icons.image : Icons.photo,
-                    size: 100,
-                    color: Colors.white,
-                  ),
+                child: Image.asset(
+                  _showFirstImage 
+                    ? 'assets/images/image1.png'
+                    : 'assets/images/image2.png',
+                  fit: BoxFit.cover,
                 ),
               ),
             ),
